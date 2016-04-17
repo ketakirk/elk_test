@@ -33,7 +33,7 @@ def generate_log_entry(ts, uname, log_type):
     return "date=%s visitor=%s url=/%s" % (ts, uname, log_type)
 
 def main():
-    with open("logfile-20160324.log", "w") as lf:
+    with open("logfile.log", "w") as lf:
         for i in range(1000):     
             ts1 = random_ts()
             uname = randstr()
